@@ -35,7 +35,7 @@ public class LoginController {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             if(resultSet.next()){
-                String Name=resultSet.getString("username");
+                String Name=resultSet.getString("Name");
                 try {
                     // Load the FXML file for the second scene
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard-view.fxml"));
@@ -45,7 +45,7 @@ public class LoginController {
                     DashboardController dashboardController = loader.getController();
 
                     // Set the data in the controller of the second scene
-                    //dashboardController.setWelcomeText(Name);
+                    dashboardController.setWelcomeText(Name);
 
                     // Create a new stage for the second scene
                     Stage secondStage = new Stage();

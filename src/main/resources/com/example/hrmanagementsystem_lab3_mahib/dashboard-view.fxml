@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hrmanagementsystem_lab3_mahib.DashboardController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hrmanagementsystem_lab3_mahib.DashboardController">
    <children>
       <Pane layoutX="18.0" layoutY="14.0" prefHeight="377.0" prefWidth="567.0">
          <children>
@@ -16,15 +15,19 @@
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="28.0" layoutY="27.0" text="DASHBOARD" underline="true">
+            <Label fx:id="title" layoutX="28.0" layoutY="27.0" text="DASHBOARD" underline="true">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Button layoutX="39.0" layoutY="126.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="39.0" layoutY="189.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="39.0" layoutY="243.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="39.0" layoutY="301.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="39.0" layoutY="126.0" mnemonicParsing="false" onAction="#onDashEmployeeClicked" text="Employee" />
+            <Label layoutX="125.0" layoutY="130.0" text="Detailed Information of employees" />
+            <Button layoutX="39.0" layoutY="189.0" mnemonicParsing="false" onAction="#onDashSalaryClicked" text="Admin" />
+            <Label layoutX="125.0" layoutY="193.0" text="Detailed Information of Admins" />
+            <Button layoutX="39.0" layoutY="243.0" mnemonicParsing="false" onAction="#onDashLogoutClicked" text="Logout" />
+            <Label layoutX="125.0" layoutY="247.0" text="Logout from the system (back to login page)" />
+            <Button layoutX="39.0" layoutY="301.0" mnemonicParsing="false" onAction="#onDashExitClicked" text="Exit" />
+            <Label layoutX="125.0" layoutY="305.0" text="Exit the System" />
          </children>
       </Pane>
    </children>
