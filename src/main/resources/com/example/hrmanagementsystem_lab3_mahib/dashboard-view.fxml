@@ -22,8 +22,8 @@
             </Label>
             <Button layoutX="39.0" layoutY="126.0" mnemonicParsing="false" onAction="#onDashEmployeeClicked" text="Employee" />
             <Label layoutX="125.0" layoutY="130.0" text="Detailed Information of employees" />
-            <Button layoutX="39.0" layoutY="189.0" mnemonicParsing="false" onAction="#onDashSalaryClicked" text="Admin" />
-            <Label layoutX="125.0" layoutY="193.0" text="Detailed Information of Admins" />
+            <Button layoutX="39.0" layoutY="189.0" mnemonicParsing="false" onAction="#onDashSalaryClicked" text="Salary" />
+            <Label layoutX="125.0" layoutY="193.0" text="Detailed Salary Information of employees" />
             <Button layoutX="39.0" layoutY="243.0" mnemonicParsing="false" onAction="#onDashLogoutClicked" text="Logout" />
             <Label layoutX="125.0" layoutY="247.0" text="Logout from the system (back to login page)" />
             <Button layoutX="39.0" layoutY="301.0" mnemonicParsing="false" onAction="#onDashExitClicked" text="Exit" />

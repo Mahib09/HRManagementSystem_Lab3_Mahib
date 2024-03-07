@@ -8,7 +8,7 @@ class SalaryTest {
 
     @Test
     void totalSalary() {
-        AdminController x=new AdminController();
+        SalaryController x=new SalaryController();
         assertEquals(x.totalSalary(5000), 60000);
     }
 }

@@ -48,7 +48,7 @@ public class DashboardController {
     public void DashSalaryClicked(){
         try {
             // Load the FXML file for the second scene
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("admin-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("salary-view.fxml"));
             Parent secondScene = loader.load();
 
             // Create a new stage for the second scene
