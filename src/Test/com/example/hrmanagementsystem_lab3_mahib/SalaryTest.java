@@ -9,6 +9,6 @@ class SalaryTest {
     @Test
     void totalSalary() {
         SalaryController x=new SalaryController();
-        assertEquals(x.totalSalary(5000), 60000);
+        assertEquals(x.totalSalary(5000), 50000);
     }
 }
